@@ -1,5 +1,6 @@
 # 设计模式
 
+#### 1. 总结目录
  - 6大设计原则
  - 单例模式
  - 工厂模式
@@ -13,3 +14,7 @@
  - 状态模式
  - 策略模式
  - 迭代器模式
+
+#### 2. 总结链接
+
+ [总结笔记链接](https://github.com/yanchunlan/SourceCodeSummary/tree/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
