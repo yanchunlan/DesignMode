@@ -47,11 +47,18 @@ public class Singleton {
     }*/
 
     // 05 双重校验锁
+    /*
+     * volatile 作用：
+     * 可见性，每次从主内存读取
+     * 禁止指令重排，解决sInstance分配内存，sInstance构造，并将sInstance对象指向分配的内存空间
+     */
     /*private static volatile Singleton singleton = null;
 
     public static Singleton getInstance() {
+        // 第一个判空作用：减少synchronized的执行次数，提高效率
         if (singleton == null) {
             synchronized (Singleton.class) {
+                // 解决多线程第一个线程初始化完成，第二个线程获取锁不再初始化
                 if (singleton == null) {
                     singleton = new Singleton();
                 }
